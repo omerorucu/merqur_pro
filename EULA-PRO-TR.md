@@ -4,7 +4,7 @@
 **Sürüm:** MerQur Pro 3.0.0 ve sonrası
 **Telif Hakkı:** © 2026 Ömer K. Örücü
 **Eser Tescili:** T.C. Kültür ve Turizm Bakanlığı, Eser Sicil No: **2026/18517**
-**Yürürlük Tarihi:** MerQur Pro 3.0.0'ın yayın tarihi
+**Yürürlük Tarihi:** MerQur Pro 3.1.0'ın yayın tarihi (sözleşme sürümü PRO-1.1.0)
 **İletişim:** info@sekizgenacademy.com
 
 ---
@@ -261,7 +261,8 @@ kendi API anahtarıyla çalışır. İlk kullanımda Kullanıcının onayı alı
 
 **b)** Yapay zekâ sağlayıcısına ham veri hücreleri gönderilmez.
 Gönderilen bilgiler şunlardır: değişken adları (Kullanıcı maskelemeyi
-seçmemişse), değişken türleri, özet istatistikler, kod ve hata metinleri.
+seçmemişse), değişken türleri, özet istatistikler ve yorumlanacak analiz
+sonucunun metni.
 Gönderimden önce gönderilecek içerik Kullanıcıya önizleme olarak
 gösterilir.
 
@@ -269,10 +270,9 @@ gösterilir.
 kullanım ve gizlilik koşullarına tabidir. Lisans Veren, Kullanıcı ile
 sağlayıcı arasındaki ilişkide taraf değildir.
 
-**d)** Yapay zekâ çıktıları hatalı veya eksik olabilir. Yapay zekâ
-tarafından önerilen kod, çalıştırılmadan önce Kullanıcı tarafından
-incelenir ve onaylanır. Bu yolla üretilen sonuçların künyesinde yapay
-zekâ desteğiyle üretildiğine ilişkin not bulunur.
+**d)** Yapay zekâ çıktıları hatalı veya eksik olabilir ve Kullanıcı
+tarafından denetlenmelidir. Yapay zekâ destekli özellikler analiz
+sonuçlarını hesaplamaz veya değiştirmez; yalnız yorum metni önerir.
 
 ---
 
@@ -291,8 +291,11 @@ bağlantısı kurulmaz.
 
 **d)** MerQur Pro ağ bağlantısını yalnız Kullanıcı yapay zekâ destekli
 özellikleri kullanırsa ve yalnız Kullanıcının seçtiği sağlayıcıya kurar
-(Madde 9). Kullanıcının Kod sekmesinde kendisinin yazdığı veya çalıştırdığı
-kodun kurduğu bağlantılar Madde 8(a) kapsamındadır.
+(Madde 9). Ayrıca Kullanıcı Yardım menüsünden güncelleme denetimini başlattığında,
+yalnız yayımlanmış en son sürümün bilgi dosyası için MerQur Pro dağıtım
+sayfasına (GitHub) bağlantı kurulur; bu istekle kullanıcı verisi
+gönderilmez. Kullanıcının Kod sekmesinde kendisinin yazdığı veya
+çalıştırdığı kodun kurduğu bağlantılar Madde 8(a) kapsamındadır.
 
 **e)** Kullanıcının analiz ettiği veriler üzerindeki KVKK / GDPR
 sorumluluğu, münhasıran Kullanıcıya aittir. Lisans Veren, Kullanıcının
@@ -366,6 +369,12 @@ kendi orijinal lisansları altında bünyesinde barındırır. Bu yazılımları
 lisans metinleri MerQur Pro kurulum klasöründe ve dokümantasyonda
 mevcuttur. Kullanıcı, MerQur Pro'yu kullanırken bu üçüncü taraf
 lisanslara da uymakla yükümlüdür.
+
+MerQur Pro ayrıca Bayesçi filogeni çözümlemesi için MrBayes 3.2.9'u
+(GNU Genel Kamu Lisansı sürüm 3) ayrı ve bağımsız bir program olarak
+içerir. MrBayes'in lisans metni ve değiştirilmemiş kaynak kodu kurulum
+klasöründe bulunur. R paketleri MerQur Pro ile dağıtılmaz; Kullanıcının
+kendi R kurulumundan, kendi lisanslarıyla kullanılır.
 
 ---
 
