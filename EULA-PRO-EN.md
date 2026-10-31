@@ -6,7 +6,7 @@ Reporting Platform
 **Copyright:** © 2026 Ömer K. Örücü
 **Work Registration:** Republic of Türkiye, Ministry of Culture and
 Tourism, Registration No: **2026/18517**
-**Effective Date:** The release date of MerQur Pro 3.0.0
+**Effective Date:** The release date of MerQur Pro 3.1.0 (agreement version PRO-1.1.0)
 **Contact:** info@sekizgenacademy.com
 
 ---
@@ -268,7 +268,8 @@ consent is obtained on first use.
 
 **b)** Raw data cells are not transmitted to the AI provider. The
 information transmitted is: variable names (unless the User has chosen
-masking), variable types, summary statistics, code, and error messages.
+masking), variable types, summary statistics, and the text of the analysis
+result to be interpreted.
 The content to be transmitted is shown to the User as a preview before
 transmission.
 
@@ -277,10 +278,9 @@ of use and privacy terms of the provider chosen by the User. The
 Licensor is not a party to the relationship between the User and the
 provider.
 
-**d)** AI outputs may be incorrect or incomplete. Code proposed by the
-AI is reviewed and approved by the User before it is run. The
-attribution of results produced this way carries a note that they were
-produced with AI assistance.
+**d)** AI outputs may be incorrect or incomplete and must be checked
+by the User. AI-assisted features do not compute or change analysis
+results; they only propose interpretive text.
 
 ---
 
@@ -299,8 +299,11 @@ for the license check.
 
 **d)** MerQur Pro makes a network connection only if the User uses the
 AI-assisted features, and only to the provider chosen by the User
-(Article 9). Connections made by code that the User writes or runs in
-the Code tab fall under Article 8(a).
+(Article 9). In addition, when the User starts the update check from the Help
+menu, a connection is made to the MerQur Pro distribution page (GitHub)
+only to retrieve the information file of the latest published release;
+no user data is sent with this request. Connections made by code that
+the User writes or runs in the Code tab fall under Article 8(a).
 
 **e)** KVKK / GDPR responsibility regarding the data analyzed by the
 User belongs exclusively to the User. The Licensor is not a party to
@@ -376,6 +379,13 @@ python-docx, etc.) under their original licenses. License texts for
 these software packages are available in the MerQur Pro installation
 folder and documentation. The User is also obligated to comply with
 these third-party licenses when using MerQur Pro.
+
+MerQur Pro also includes MrBayes 3.2.9 (GNU General Public License
+version 3) as a separate and independent program for Bayesian
+phylogenetic analysis. The license text and the unmodified source code
+of MrBayes are provided in the installation folder. R packages are not
+distributed with MerQur Pro; they are used from the User's own R
+installation under their own licenses.
 
 ---
 
