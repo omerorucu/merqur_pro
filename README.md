@@ -4,7 +4,7 @@
 
 # MerQur Pro
 
-### *Analysis beyond the form: code, templates and the MerQur engine in one place*
+### *Analysis beyond the form: validated templates, code and the MerQur engine in one place*
 
 **ANALYZE · MODEL · INTERPRET · REPORT**
 
@@ -15,14 +15,14 @@
 
 ---
 
-![Version](https://img.shields.io/badge/version-3.0.0-5B21B6?style=flat-square)
+![Version](https://img.shields.io/badge/version-3.1.0-5B21B6?style=flat-square)
 ![Base](https://img.shields.io/badge/base%20MerQur-2.3.1-7C3AED?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011%20x64-blue?style=flat-square)
 ![Languages](https://img.shields.io/badge/i18n-TR%20%7C%20EN%20%7C%20ES-success?style=flat-square)
-![Templates](https://img.shields.io/badge/code%20templates-165%20in%2023%20categories-5B21B6?style=flat-square)
+![Templates](https://img.shields.io/badge/validated%20templates-189%20in%2023%20categories-5B21B6?style=flat-square)
 ![License](https://img.shields.io/badge/license-commercial%20key%20required-orange?style=flat-square)
 
-**[⬇ Download MerQur Pro 3.0.0 for Windows](https://github.com/omerorucu/merqur_pro/releases/latest)**
+**[⬇ Download MerQur Pro 3.1.0 for Windows](https://github.com/omerorucu/merqur_pro/releases/latest)**
 
 </div>
 
@@ -31,19 +31,19 @@
 ## 🔍 What is MerQur Pro?
 
 **MerQur Pro** is the licensed edition of [MerQur](https://github.com/omerorucu/merqur). It contains
-**everything in MerQur 2.3.1** (137 form-based analyses, 7 map methods, APA 7 reports) and adds a
-**Code tab** for analyses that a form cannot express: custom models, simulations, special contrasts
-and methods MerQur does not offer as a form.
+**everything in MerQur 2.3.1** (137 form-based analyses, 7 map methods, APA 7 reports) and adds
+**189 validated analysis templates** and a **Code tab** for analyses that a form cannot express:
+advanced econometrics, clinical prediction, phylogenetics, custom models, simulations and more.
 
-Code results do not live in a separate console. Every table, figure and text block your code produces
-becomes a card in MerQur's **Results, Table, Chart and Report** tabs, goes into the DOCX report with its
-code, and is saved with the project.
+Every template opens with a **parameter window** that exposes all meaningful options of the underlying
+method. Its results become cards in MerQur's **Results, Table, Chart and Report** tabs, go into the DOCX
+report with a **"Software and citations"** section, and are saved with the project.
 
 <div align="center">
 
-| **165** | **23** | **2** | **APA 7** |
+| **189** | **23** | **2 543** | **APA 7** |
 |:---:|:---:|:---:|:---:|
-| Ready-to-run<br>code templates | Template<br>categories | Languages<br>(Python · R) | Reports with<br>code appendix |
+| Validated<br>templates | Template<br>categories | Adjustable<br>parameters | Reports with software<br>citations |
 
 </div>
 
@@ -54,62 +54,60 @@ Start-menu icon. Installing or removing one does not affect the other.
 
 ## ✨ What Pro adds
 
-### 🧑‍💻 Code tab: Python and R
-- **Embedded Python 3.13** with numpy, scipy, pandas, statsmodels, scikit-learn and matplotlib. Nothing to install.
-- **R** (4.5.x) through your own R installation, detected automatically. Missing packages come with a ready `install.packages(...)` suggestion.
-- **Your own Python**, if you need packages beyond the embedded set (shown as "external" in the output footer).
-- The active dataset is available as **`df`** in both languages. Turkish and Unicode column and level names are preserved.
-- Safe execution: runs in a separate worker process, **Cancel stops it within a second**, with a configurable time limit. A crash in your code never takes the main window down.
-- Syntax errors are highlighted on the offending line. A run history lets you reopen any earlier code.
-
-### 📚 Template library: 165 ready analyses
-Each template opens with a **parameter form** built from its definition, ships with **sample data and
-sample parameters**, and its output is fully translated (TR / EN / ES: text, tables, comments).
-Templates were checked against the source R/Python package and published worked examples. Where an
-equivalent SAS procedure exists, its code is shown next to the template for comparison.
+### 📚 Template library: 189 validated analyses
+- Each template was **validated against a published source** (package vignette, textbook table or article)
+  and, where an equivalent procedure exists, **against SAS** (typical differences 1e-6 to 1e-12). Where R
+  and SAS define a quantity differently, the template states which definition it uses.
+- **Parameter settings window** (or double-click a template): variables and options are arranged in
+  tabs (**Variables, Model, Options, Advanced, Output**) covering all meaningful options of the method;
+  **OK and run** runs the analysis with these settings.
+- Sample data and sample settings for every template; output fully translated (TR / EN / ES: text,
+  tables, comments, SAS equivalents).
 
 | Category | # | Examples |
 |---|:---:|---|
-| Genetics & genomics | 23 | kinship, AMOVA, GWAS, genomic selection, QTL mapping, heritability, qPCR relative quantification |
-| Causal inference | 16 | double machine learning, AIPW, TMLE, synthetic control, staggered DiD, regression discontinuity |
-| Mixed models | 12 | ordinal mixed (CLMM), multi-response mixed, advanced GLMM, glmmTMB families |
-| Regression models | 11 | beta regression, hurdle, exact logistic, panel Tobit, custom likelihood |
-| Time series | 11 | ARFIMA, wavelets, DCC-GARCH, general state space |
-| Multivariate | 10 | Bayesian networks, compositional data, functional data |
-| Psychometrics | 10 | network psychometrics, cognitive diagnosis, many-facet Rasch, advanced DIF |
-| Survival | 10 | interval-censored regression, multi-state models, flexible parametric |
-| Structural equation models | 8 | Bayesian SEM, growth mixture, multilevel CFA, ESEM |
-| Meta-analysis | 7 | network meta, multivariate meta, multilevel meta, dose–response meta |
-| Spatial | 7 | areal Bayesian CAR, conditional simulation, MGWR, point process models |
-| Design of experiments | 5 | alpha lattice, group sequential, fractional factorial, optimal design |
-| Quality | 5 | CUSUM / EWMA, process capability, reliability, control and attribute charts |
-| Resampling | 5 | block bootstrap, custom bootstrap, delta method |
-| Survey | 4 | calibration / raking, small-area estimation, sample selection, hot-deck |
-| Smoothing | 4 | GAMLSS, GAMM, advanced quantile regression, MARS |
-| Ecology | 4 | diversity indices, constrained ordination, PERMANOVA / Mantel |
-| Bayesian | 3 | Bayesian model averaging, multilevel brms, custom MCMC models |
-| Simulation | 3 | power by simulation, mixed-model power, method comparison simulation |
-| Missing data | 2 | multilevel imputation, MNAR reference-based imputation |
-| Extreme values | 2 | GEV / GPD |
-| Method comparison | 1 | Deming and Passing–Bablok |
+| Genetics & genomics | 27 | AMOVA (genotypes and DNA sequences, ΦST), Bayesian phylogenetics with MrBayes, DNA barcoding and species delimitation, sequence alignment, haplotype networks, neutrality tests, GWAS, QTL mapping |
+| Causal inference & panel econometrics | 17 | double machine learning, AIPW, TMLE, synthetic control, staggered DiD, regression discontinuity, second-generation panel tests (CD, CIPS, Pedroni, Kao, Dumitrescu–Hurlin, CCE/AMG) |
+| Regression & efficiency models | 16 | stochastic frontier analysis, data envelopment analysis and Malmquist index, discrete choice (mixed, nested, latent-class logit, WTP), distribution fitting, robust ANOVA, beta regression, hurdle |
+| Time series | 14 | ARDL / NARDL bounds test, structural-break unit roots, Toda–Yamamoto, joinpoint and interrupted time series, ARFIMA, DCC-GARCH |
+| Mixed models | 13 | bioequivalence and non-compartmental PK analysis, ordinal mixed models, glmmTMB families, nlme |
+| Survival | 13 | clinical prediction models (TRIPOD: splines, bootstrap validation, calibration, decision curves, nomogram), penalized Cox, RMST regression, multi-state models |
+| Multivariate | 10 | Bayesian networks, compositional and functional data |
+| Psychometrics | 10 | network psychometrics, cognitive diagnosis, many-facet Rasch, DIF |
+| Structural equation models | 9 | RI-CLPM and latent change scores, Bayesian SEM, ESEM, growth mixture |
+| Design of experiments | 8 | crossover trials, mixture experiments, diallel and line × tester, augmented blocks, Latin squares |
+| Meta-analysis | 8 | proportion meta-analysis (GLMM), network, multivariate and multilevel meta-analysis |
+| Spatial | 8 | spatio-temporal kriging, cokriging, MGWR, areal Bayesian CAR, point processes |
+| Ecology | 5 | occupancy and N-mixture models, capture–recapture, diversity, PERMANOVA |
+| Quality, resampling, survey, smoothing, Bayesian, simulation, missing data, extreme values, method comparison | 29 | control charts, block bootstrap, raking, GAMLSS, brms, power by simulation, multilevel imputation, GEV/GPD, Deming |
 | Starters | 2 | empty Python and R templates |
 
-Save your own code as a template ("Save as template…"); it appears in the same tree.
+**MrBayes 3.2.9 is included**: Bayesian phylogenetic analyses run with the bundled MrBayes; nothing else to install.
+
+### 🧾 Software and citations, for your methods section
+Every run lists the software used, ready to paste into a paper: MerQur Pro, the R or Python version, and
+every package used **with its version and its official citation** (and MrBayes when it was run). The
+section stays in the report even when the code appendix is turned off. The package versions are also
+stored with `.mqs` scripts; re-running a script with different package versions shows a warning.
+
+### 🧑‍💻 Code tab: Python and R
+- **Embedded Python 3.13** with numpy, scipy, pandas, statsmodels, scikit-learn and matplotlib. Nothing to install.
+- **R** (4.5.x) through your own R installation, detected automatically. Missing packages come with a ready `install.packages(...)` suggestion.
+- **Your own Python**, if you need packages beyond the embedded set.
+- The active dataset is available as **`df`** in both languages. Safe execution in a separate process, **Cancel stops it within a second**, configurable time limit, error-line highlighting, run history.
 
 ### ⚙️ MerQur engine from code
 The `mq` module calls MerQur's own analysis engines from Python, for example `mq.ttest(df, "y", "g")` or
-`mq.mediation(...)`, and returns exactly the text MerQur's form would produce. `mq.yardim("ttest")`
-lists the options. `mq.veriye_yaz(...)` writes new columns or filtered rows back to the Data tab
-**after a confirmation dialog**, and the change can be undone (Ctrl+Z).
+`mq.mediation(...)`, and returns exactly the text MerQur's form would produce. `mq.veriye_yaz(...)` writes
+new columns or filtered rows back to the Data tab **after a confirmation dialog**, and the change can be undone.
 
-### 🤖 AI assistant
-- **AI code assistant** under the Code tab: describe an analysis in Turkish or English and get code, have an error explained with a corrected version shown as a diff, or have the output interpreted.
-- **AI Interpreter** for results and reports.
-- Uses **your own API key** for the provider you choose, stored in the Windows credential vault. Only column names and summaries are sent; **data cells are never sent**, and the preview window shows exactly what will go out.
+### 🤖 AI Interpreter
+Optional interpretation of results and reports with **your own API key**. Only column names and summaries
+are sent, **never data cells**, and a preview shows exactly what will go out. AI features do not compute or
+change results.
 
 ### 📜 Scripts (.mqs) with code steps
-MerQur scripts can contain code steps. In the GUI each code step asks for approval. In headless runs they
-run only with `--kod-izin`, so a shared script cannot run code on your machine without your consent.
+In the GUI each code step asks for approval; headless runs execute code steps only with `--kod-izin`.
 
 ---
 
@@ -120,21 +118,21 @@ run only with `--kod-izin`, so a shared script cannot run code on your machine w
 | **Operating system** | Windows 10 or 11, 64-bit |
 | **Disk** | about 1.5 GB |
 | **Memory** | 8 GB recommended |
-| **R (optional)** | R 4.5.x, needed for the R templates (139 of 165). Packages are installed from within R when a template asks for them. |
-| **Internet** | not required. MerQur Pro makes **no network requests** except AI requests you send yourself. |
+| **R (optional)** | R 4.5.x, needed for the R templates (163 of 189). Packages are installed from within R when a template asks for them. |
+| **Internet** | not required. MerQur Pro connects only when you send an AI request or start **Help → Check for updates** yourself. |
 
 macOS and Linux builds of MerQur Pro are not available yet. The free MerQur runs on all three.
 
 ---
 
-## 📥 Installation
+## 📥 Installation and updates
 
-1. Download **`MerQurPro-3.0.0-windows-x64-Setup.exe`** from the [latest release](https://github.com/omerorucu/merqur_pro/releases/latest).
+1. Download **`MerQurPro-3.1.0-windows-x64-Setup.exe`** from the [latest release](https://github.com/omerorucu/merqur_pro/releases/latest).
 2. Run the installer. The publisher is shown as **Ömer Kamil Örücü** (code-signed).
 3. On first start, read and accept the **MerQur Pro license agreement**, then enter your **license key**.
 
-The language, theme, font size, chart DPI and AI provider settings of an existing free MerQur are
-copied once on first start.
+To update, install the new version over the existing one; your license, settings and templates are kept.
+**Help → Check for updates** tells you when a new version is available.
 
 ---
 
@@ -151,14 +149,20 @@ MerQur Pro is **paid software** and runs only with a **personal license key**:
 
 Full terms: [EULA-PRO-EN.md](EULA-PRO-EN.md) · [EULA-PRO-TR.md](EULA-PRO-TR.md)
 
-The source code is not public. This repository is for distribution only (installer, license text,
-release notes).
+**Third-party software:** MerQur Pro includes MrBayes 3.2.9 (GNU GPL v3) as a separate program; its license
+and unmodified source code are in the installation folder (`pro\ucuncu_taraf\mrbayes`). R packages are not
+distributed with MerQur Pro.
+
+The MerQur Pro source code is not public. This repository is for distribution only (installer, license
+text, release notes).
 
 ---
 
 ## 📖 Citation
 
-> Örücü, Ö. K. (2026). *MerQur Pro: Integrated Academic Data Analysis and Reporting Platform* (Version 3.0.0; base version 2.3.1) [Computer software]. https://doi.org/10.53463/merqur.2026001
+> Örücü, Ö. K. (2026). *MerQur Pro: Integrated Academic Data Analysis and Reporting Platform* (Version 3.1.0; base version 2.3.1) [Computer software]. https://doi.org/10.53463/merqur.2026001
+
+Please also cite the R packages and programs listed in the "Software and citations" section of your results.
 
 Registered work: T.C. Ministry of Culture and Tourism, registration no. **2026/18517**.
 
@@ -170,30 +174,33 @@ Registered work: T.C. Ministry of Culture and Tourism, registration no. **2026/1
 ## MerQur Pro nedir?
 
 **MerQur Pro**, [MerQur](https://github.com/omerorucu/merqur)'un lisanslı sürümüdür. **MerQur 2.3.1'in
-tamamını** (137 form tabanlı analiz, 7 harita yöntemi, APA 7 raporları) içerir ve formla ifade
-edilemeyen analizler için bir **Kod sekmesi** ekler: özel modeller, benzetimler, özel kontrastlar ve
-MerQur'da form olarak bulunmayan yöntemler.
-
-Kodun ürettiği her tablo, grafik ve metin MerQur'un **Sonuçlar, Tablo, Grafik ve Rapor** sekmelerine kart
-olarak düşer, koduyla birlikte DOCX raporuna girer ve projeyle kaydedilir.
+tamamını** (137 form tabanlı analiz, 7 harita yöntemi, APA 7 raporları) içerir; buna **189 doğrulanmış
+analiz şablonu** ve formla ifade edilemeyen analizler için bir **Kod sekmesi** ekler.
 
 **Pro'nun getirdikleri**
 
-- **Kod sekmesi:** gömülü Python 3.13 (numpy, scipy, pandas, statsmodels, scikit-learn, matplotlib); bilgisayardaki R 4.5.x; isteğe bağlı kendi Python'unuz. Etkin veri iki dilde de `df`. Ayrı işçi süreçte güvenli çalışma, 1 saniyede iptal, zaman sınırı, hata satırı vurgusu, geçmiş.
-- **165 hazır şablon, 23 kategori:** genetik (23), nedensel çıkarım (16), karma modeller (12), regresyon modelleri (11), zaman serisi (11), çok değişkenli (10), psikometri (10), sağkalım (10), YEM (8), meta-analiz (7), uzamsal (7) ve diğerleri. Her şablonun parametre formu, örnek verisi ve örnek parametreleri vardır; çıktıları TR/EN/ES çevrilidir.
-- **Koddan MerQur motoru:** `mq.ttest(...)`, `mq.mediation(...)` formla aynı sonucu verir. `mq.veriye_yaz(...)` onay penceresiyle Veri sekmesine yazar ve geri alınabilir.
-- **Yapay zekâ yardımcısı:** Türkçe istekten kod, hata açıklama (fark görünümüyle düzeltme), çıktı yorumu ve AI Yorumlayıcı. Kendi API anahtarınızla çalışır. Veri hücreleri gönderilmez, yalnız sütun adları ve özetler gider.
-- **Kod adımlı .mqs betikleri:** arayüzde adım başına onay, başsız çalıştırmada yalnız `--kod-izin` ile.
-- Ücretsiz MerQur ile **yan yana** kurulur. Klasörler, ayarlar ve kısayollar ayrıdır.
+- **189 doğrulanmış şablon, 23 kategori:** her şablon yayımlanmış bir kaynakla, eşdeğer yordam varsa SAS ile karşılaştırıldı. Öne çıkanlar:
+  - ekonometri: ARDL/NARDL, kırılmalı birim kök, ikinci kuşak panel, SFA, DEA, kesikli seçim;
+  - klinik: klinik tahmin modeli, cezalı Cox, RMST, çapraz geçiş, biyoeşdeğerlik;
+  - genetik ve filocoğrafya: dizi verisiyle AMOVA, MrBayes ile Bayesçi filogeni, DNA barkodlama, hizalama;
+  - diğer: oran meta-analizi, RI-CLPM, dialel, karışım deneyleri, doluluk modelleri, uzay-zaman krigingi.
+- **Parametre ayarları penceresi:** yöntemin anlamlı bütün seçenekleri Değişkenler, Model, Seçenekler, Gelişmiş ve Çıktı sekmelerinde ayarlanabilir. Toplam 2.543 parametre var. **Tamam ve çalıştır** analizi bu ayarlarla çalıştırır.
+- **MrBayes 3.2.9 birlikte gelir:** Bayesçi filogeni ek kurulum gerektirmez.
+- **Yazılım ve atıflar:** her koşuda MerQur Pro, R/Python ve kullanılan paketler sürümleri ve resmî atıflarıyla listelenir; makalenin yöntem bölümüne doğrudan yapıştırılabilir. `.mqs` betiği farklı paket sürümleriyle yeniden çalıştırılırsa uyarı verilir.
+- **Kod sekmesi:** gömülü Python 3.13, bilgisayardaki R 4.5.x; `mq` modülüyle MerQur motorları koddan çağrılır.
+- **AI Yorumlayıcı:** kendi API anahtarınızla sonuç ve rapor yorumu. Veri hücreleri gönderilmez; yapay zekâ sonuçları hesaplamaz ya da değiştirmez.
+- Ücretsiz MerQur ile **yan yana** kurulur.
 
-**Sistem gereksinimleri:** Windows 10/11 64 bit, yaklaşık 1,5 GB disk. R şablonları (165'in 139'u) için R 4.5.x gerekir. İnternet gerekmez. Program, sizin gönderdiğiniz AI istekleri dışında ağa çıkmaz.
+**Sistem gereksinimleri:** Windows 10/11 64 bit, yaklaşık 1,5 GB disk. R şablonları (189'un 163'ü) için R 4.5.x gerekir. Program yalnız sizin gönderdiğiniz AI isteklerinde ve **Yardım → Güncellemeleri Denetle** ile ağa çıkar.
 
-**Kurulum:** [Son sürümden](https://github.com/omerorucu/merqur_pro/releases/latest) `MerQurPro-3.0.0-windows-x64-Setup.exe` indirilir ve çalıştırılır. İlk açılışta lisans sözleşmesi kabul edilir ve lisans anahtarı girilir.
+**Kurulum ve güncelleme:** [Son sürümden](https://github.com/omerorucu/merqur_pro/releases/latest) `MerQurPro-3.1.0-windows-x64-Setup.exe` indirilir ve çalıştırılır. Yeni sürüm mevcut kurulumun üzerine kurulur; lisans, ayarlar ve şablonlar korunur.
 
 **Lisans:** MerQur Pro ücretlidir ve kişiye özel, **bir yıllık** lisans anahtarıyla çalışır. **Ticari kullanım serbesttir.** Satış ve faturalama yetkili satıcı **Sekizgen Academy** tarafından yapılır.
 Lisans için: [info@sekizgenacademy.com](mailto:info@sekizgenacademy.com) · [sekizgenacademy.com](https://sekizgenacademy.com) · Sözleşme: [EULA-PRO-TR.md](EULA-PRO-TR.md)
 
-**Atıf:** Örücü, Ö. K. (2026). *MerQur Pro: Bütünleşik Akademik Veri Analizi ve Raporlama Platformu* (Sürüm 3.0.0; temel sürüm 2.3.1) [Bilgisayar yazılımı]. https://doi.org/10.53463/merqur.2026001
+**Üçüncü taraf yazılım:** MrBayes 3.2.9 (GNU GPL v3) ayrı bir program olarak birlikte gelir; lisans metni ve değiştirilmemiş kaynak kodu kurulum klasöründedir.
+
+**Atıf:** Örücü, Ö. K. (2026). *MerQur Pro: Bütünleşik Akademik Veri Analizi ve Raporlama Platformu* (Sürüm 3.1.0; temel sürüm 2.3.1) [Bilgisayar yazılımı]. https://doi.org/10.53463/merqur.2026001 — Sonuçlardaki "Yazılım ve atıflar" bölümünde listelenen paketlere de atıf yapılması rica olunur.
 
 </details>
 
