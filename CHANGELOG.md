@@ -1,5 +1,29 @@
 # MerQur Pro: Değişiklik Günlüğü
 
+## 3.1.0 (2026-11) — 24 yeni şablon, parametre penceresi, atıflar
+
+### Yeni
+- **24 yeni doğrulanmış şablon (toplam 189).**
+  - Ekonometri: ARDL/NARDL sınır testi, kırılmalı birim kök (Zivot–Andrews, Lee–Strazicich) ve Toda–Yamamoto, ikinci kuşak panel (Pesaran CD, CIPS, Pedroni, Kao, Dumitrescu–Hurlin, CCE/AMG), stokastik sınır analizi, veri zarflama analizi ve Malmquist endeksi, kesikli seçim (karma, iç içe ve gizil sınıf lojit, ödeme isteği).
+  - Klinik: klinik tahmin modeli (kısıtlı kübik spline, bootstrap doğrulama, kalibrasyon, karar eğrisi, nomogram), cezalı Cox, RMST regresyonu, çapraz geçiş denemeleri, biyoeşdeğerlik ve kompartımansız analiz, joinpoint ve kesintili zaman serisi.
+  - Meta-analiz, YEM ve tasarım: oran meta-analizi (varsayılan GLMM), RI-CLPM ve gizil değişim puanı, dağılım uydurma, sağlam ANOVA, karışım deneyleri, dialel/çizgi × test/artırılmış blok/Latin kare.
+  - Genetik, ekoloji ve uzamsal: dizi verisiyle AMOVA ve ikili ΦST, MrBayes ile Bayesçi filogeni, DNA barkodlama ve tür sınırlandırma, dizi hizalama (isteğe bağlı GenBank), doluluk ve yakala-yeniden yakala modelleri, uzay-zaman krigingi.
+  - Her biri yayımlanmış kaynakla, eşdeğeri varsa SAS ile karşılaştırıldı.
+- **Parametre ayarları penceresi.** Şablonun bütün değişken ve seçenekleri Değişkenler, Model, Seçenekler, Gelişmiş ve Çıktı sekmelerinde ayarlanır; **Tamam ve çalıştır** analizi bu ayarlarla çalıştırır. Yan bölmede kısa özet kalır; şablona çift tıklamak pencereyi açar.
+- **Bütün şablonlarda tüm parametreler.** Mevcut 165 şablona alttaki yöntemin anlamlı seçenekleri eklendi (şablon başına ortalama 8 → 13,5 parametre). Varsayılan ayarlarla sonuçlar öncekiyle birebir aynıdır.
+- **MrBayes 3.2.9 birlikte gelir** (GNU GPL v3, ayrı program; lisans ve kaynak kodu kurulum klasöründe). Şablon özetleri MrBayes'in kendi sump/sumt çıktısıyla karşılaştırıldı.
+- **Yazılım ve atıflar.** Her kod ve şablon koşusunda MerQur Pro, R/Python ve kullanılan paketler sürümleri ve resmî atıflarıyla listelenir; bölüm kod eki kapalıyken de raporda kalır. `.mqs` betiği farklı paket sürümleriyle yeniden çalıştırılırsa uyarı verilir.
+- **Yardım → Güncellemeleri Denetle.** Yalnız tıklanınca çalışır; açılışta ağ isteği yoktur.
+
+### Değişen
+- Yapay zekâ **kod yardımcısı kaldırıldı.** Sonuç ve rapor yorumu yapan AI Yorumlayıcı sürer. Eski `.mqs` betiklerindeki "yapay zekâ ile üretildi" işareti okunmaya devam eder.
+- Lisans sözleşmesi PRO-1.1.0: kod yardımcısı maddeleri çıkarıldı, güncelleme denetimi ve MrBayes bildirimi eklendi. İlk açılışta bir kez yeniden onaylanır.
+- `uzay_zaman_kriging` artık gerçek uzay-zaman krigingidir; eski eş-kriging şablonunun adı `es_kriging` oldu (sonuçları değişmedi).
+
+### Düzeltilen
+- Şablon formunda 1e-14 gibi çok küçük ondalık değerler 0'a yuvarlanıyordu.
+- Bazı şablon seçenekleri ham hata veriyordu ya da İngilizce arayüzde Türkçe sütun adı gösteriyordu (her seçenek tek tek denetlendi). `cift_engel` modelinde paket hatası nedeniyle bc ve ihs dağılımları kaldırıldı.
+
 ## 3.0.0 (2026-10-31) — ilk sürüm
 
 Temel sürüm: MerQur 2.3.1 (ücretsiz sürümün bütün analizleri ve düzeltmeleri dahil).
