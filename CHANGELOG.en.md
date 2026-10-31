@@ -1,5 +1,29 @@
 # MerQur Pro: Changelog
 
+## 3.1.0 (2026-11): 24 new templates, parameter window, citations
+
+### New
+- **24 new validated templates (189 in total).**
+  - Econometrics: ARDL/NARDL bounds test, structural-break unit roots (Zivot–Andrews, Lee–Strazicich) and Toda–Yamamoto, second-generation panel tests (Pesaran CD, CIPS, Pedroni, Kao, Dumitrescu–Hurlin, CCE/AMG), stochastic frontier analysis, data envelopment analysis and Malmquist index, discrete choice (mixed, nested and latent-class logit, WTP).
+  - Clinical: clinical prediction models (restricted cubic splines, bootstrap validation, calibration, decision curves, nomogram), penalized Cox, RMST regression, crossover trials, bioequivalence and non-compartmental analysis, joinpoint and interrupted time series.
+  - Meta-analysis, SEM and design: proportion meta-analysis (GLMM by default), RI-CLPM and latent change scores, distribution fitting, robust ANOVA, mixture experiments, diallel/line × tester/augmented blocks/Latin squares.
+  - Genetics, ecology and spatial: AMOVA with DNA sequences and pairwise ΦST, Bayesian phylogenetics with MrBayes, DNA barcoding and species delimitation, sequence alignment (optional GenBank), occupancy and capture–recapture models, spatio-temporal kriging.
+  - Each was compared with a published source and, where an equivalent exists, with SAS.
+- **Parameter settings window.** All variables and options of a template are set in Variables, Model, Options, Advanced and Output tabs; **OK and run** runs the analysis with these settings. A short summary remains in the side pane; double-clicking a template opens the window.
+- **All parameters in every template.** The meaningful options of the underlying method were added to the existing 165 templates (8 → 13.5 parameters per template on average). With default settings, results are identical to before.
+- **MrBayes 3.2.9 is included** (GNU GPL v3, separate program; license and source code in the installation folder). Template summaries were compared with MrBayes's own sump/sumt output.
+- **Software and citations.** Every code and template run lists MerQur Pro, R/Python and the packages used with their versions and official citations; the section stays in the report even with the code appendix turned off. Re-running a `.mqs` script with different package versions shows a warning.
+- **Help → Check for updates.** Runs only when clicked; no network request at start-up.
+
+### Changed
+- The AI **code assistant was removed.** The AI Interpreter for results and reports remains. The "generated with AI" flag in older `.mqs` scripts is still read.
+- License agreement PRO-1.1.0: code-assistant clauses removed, update check and MrBayes notice added. It is accepted once more on first start.
+- `uzay_zaman_kriging` is now true spatio-temporal kriging; the former cokriging template is now `es_kriging` (results unchanged).
+
+### Fixed
+- Very small decimal values such as 1e-14 were rounded to 0 in the template form.
+- Some template options produced raw errors or showed Turkish column names in the English interface (every option was checked one by one). In `cift_engel`, the bc and ihs distributions were removed because of a package bug.
+
 ## 3.0.0 (2026-10-31): first release
 
 Base version: MerQur 2.3.1 (all analyses and fixes of the free edition included).
