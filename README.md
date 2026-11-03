@@ -15,14 +15,14 @@
 
 ---
 
-![Version](https://img.shields.io/badge/version-3.1.0-5B21B6?style=flat-square)
-![Base](https://img.shields.io/badge/base%20MerQur-2.3.1-7C3AED?style=flat-square)
+![Version](https://img.shields.io/badge/version-3.2.0-5B21B6?style=flat-square)
+![Base](https://img.shields.io/badge/base%20MerQur-2.3.2-7C3AED?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011%20x64-blue?style=flat-square)
 ![Languages](https://img.shields.io/badge/i18n-TR%20%7C%20EN%20%7C%20ES-success?style=flat-square)
-![Templates](https://img.shields.io/badge/validated%20templates-189%20in%2023%20categories-5B21B6?style=flat-square)
+![Templates](https://img.shields.io/badge/validated%20templates-195%20in%2024%20categories-5B21B6?style=flat-square)
 ![License](https://img.shields.io/badge/license-commercial%20key%20required-orange?style=flat-square)
 
-**[⬇ Download MerQur Pro 3.1.0 for Windows](https://github.com/omerorucu/merqur_pro/releases/latest)**
+**[⬇ Download MerQur Pro 3.2.0 for Windows](https://github.com/omerorucu/merqur_pro/releases/latest)**
 
 </div>
 
@@ -31,8 +31,8 @@
 ## 🔍 What is MerQur Pro?
 
 **MerQur Pro** is the licensed edition of [MerQur](https://github.com/omerorucu/merqur). It contains
-**everything in MerQur 2.3.1** (137 form-based analyses, 7 map methods, APA 7 reports) and adds
-**189 validated analysis templates** and a **Code tab** for analyses that a form cannot express:
+**everything in MerQur 2.3.2** (137 form-based analyses, 7 map methods, APA 7 reports) and adds
+**195 validated analysis templates** and a **Code tab** for analyses that a form cannot express:
 advanced econometrics, clinical prediction, phylogenetics, custom models, simulations and more.
 
 Every template opens with a **parameter window** that exposes all meaningful options of the underlying
@@ -41,7 +41,7 @@ report with a **"Software and citations"** section, and are saved with the proje
 
 <div align="center">
 
-| **189** | **23** | **2 543** | **APA 7** |
+| **195** | **24** | **2 543** | **APA 7** |
 |:---:|:---:|:---:|:---:|
 | Validated<br>templates | Template<br>categories | Adjustable<br>parameters | Reports with software<br>citations |
 
@@ -54,7 +54,7 @@ Start-menu icon. Installing or removing one does not affect the other.
 
 ## ✨ What Pro adds
 
-### 📚 Template library: 189 validated analyses
+### 📚 Template library: 195 validated analyses
 - Each template was **validated against a published source** (package vignette, textbook table or article)
   and, where an equivalent procedure exists, **against SAS** (typical differences 1e-6 to 1e-12). Where R
   and SAS define a quantity differently, the template states which definition it uses.
@@ -118,7 +118,7 @@ In the GUI each code step asks for approval; headless runs execute code steps on
 | **Operating system** | Windows 10 or 11, 64-bit |
 | **Disk** | about 1.5 GB |
 | **Memory** | 8 GB recommended |
-| **R (optional)** | R 4.5.x, needed for the R templates (163 of 189). Packages are installed from within R when a template asks for them. |
+| **R (optional)** | R 4.5.x, needed for the R templates (169 of 195). Packages are installed from within R when a template asks for them. |
 | **Internet** | not required. MerQur Pro connects only when you send an AI request or start **Help → Check for updates** yourself. |
 
 macOS and Linux builds of MerQur Pro are not available yet. The free MerQur runs on all three.
@@ -127,7 +127,7 @@ macOS and Linux builds of MerQur Pro are not available yet. The free MerQur runs
 
 ## 📥 Installation and updates
 
-1. Download **`MerQurPro-3.1.0-windows-x64-Setup.exe`** from the [latest release](https://github.com/omerorucu/merqur_pro/releases/latest).
+1. Download **`MerQurPro-3.2.0-windows-x64-Setup.exe`** from the [latest release](https://github.com/omerorucu/merqur_pro/releases/latest).
 2. Run the installer. The publisher is shown as **Ömer Kamil Örücü** (code-signed).
 3. On first start, read and accept the **MerQur Pro license agreement**, then enter your **license key**.
 
@@ -160,7 +160,7 @@ text, release notes).
 
 ## 📖 Citation
 
-> Örücü, Ö. K. (2026). *MerQur Pro: Integrated Academic Data Analysis and Reporting Platform* (Version 3.1.0; base version 2.3.1) [Computer software]. https://doi.org/10.53463/merqur.2026001
+> Örücü, Ö. K. (2026). *MerQur Pro: Integrated Academic Data Analysis and Reporting Platform* (Version 3.2.0; base version 2.3.2) [Computer software]. https://doi.org/10.53463/merqur.2026001
 
 Please also cite the R packages and programs listed in the "Software and citations" section of your results.
 
@@ -173,13 +173,13 @@ Registered work: T.C. Ministry of Culture and Tourism, registration no. **2026/1
 
 ## MerQur Pro nedir?
 
-**MerQur Pro**, [MerQur](https://github.com/omerorucu/merqur)'un lisanslı sürümüdür. **MerQur 2.3.1'in
-tamamını** (137 form tabanlı analiz, 7 harita yöntemi, APA 7 raporları) içerir; buna **189 doğrulanmış
+**MerQur Pro**, [MerQur](https://github.com/omerorucu/merqur)'un lisanslı sürümüdür. **MerQur 2.3.2'nin
+tamamını** (137 form tabanlı analiz, 7 harita yöntemi, APA 7 raporları) içerir; buna **195 doğrulanmış
 analiz şablonu** ve formla ifade edilemeyen analizler için bir **Kod sekmesi** ekler.
 
 **Pro'nun getirdikleri**
 
-- **189 doğrulanmış şablon, 23 kategori:** her şablon yayımlanmış bir kaynakla, eşdeğer yordam varsa SAS ile karşılaştırıldı. Öne çıkanlar:
+- **195 doğrulanmış şablon, 24 kategori:** her şablon yayımlanmış bir kaynakla, eşdeğer yordam varsa SAS ile karşılaştırıldı. Öne çıkanlar:
   - ekonometri: ARDL/NARDL, kırılmalı birim kök, ikinci kuşak panel, SFA, DEA, kesikli seçim;
   - klinik: klinik tahmin modeli, cezalı Cox, RMST, çapraz geçiş, biyoeşdeğerlik;
   - genetik ve filocoğrafya: dizi verisiyle AMOVA, MrBayes ile Bayesçi filogeni, DNA barkodlama, hizalama;
@@ -191,16 +191,16 @@ analiz şablonu** ve formla ifade edilemeyen analizler için bir **Kod sekmesi**
 - **AI Yorumlayıcı:** kendi API anahtarınızla sonuç ve rapor yorumu. Veri hücreleri gönderilmez; yapay zekâ sonuçları hesaplamaz ya da değiştirmez.
 - Ücretsiz MerQur ile **yan yana** kurulur.
 
-**Sistem gereksinimleri:** Windows 10/11 64 bit, yaklaşık 1,5 GB disk. R şablonları (189'un 163'ü) için R 4.5.x gerekir. Program yalnız sizin gönderdiğiniz AI isteklerinde ve **Yardım → Güncellemeleri Denetle** ile ağa çıkar.
+**Sistem gereksinimleri:** Windows 10/11 64 bit, yaklaşık 1,5 GB disk. R şablonları (195'in 169'u) için R 4.5.x gerekir. Program yalnız sizin gönderdiğiniz AI isteklerinde ve **Yardım → Güncellemeleri Denetle** ile ağa çıkar.
 
-**Kurulum ve güncelleme:** [Son sürümden](https://github.com/omerorucu/merqur_pro/releases/latest) `MerQurPro-3.1.0-windows-x64-Setup.exe` indirilir ve çalıştırılır. Yeni sürüm mevcut kurulumun üzerine kurulur; lisans, ayarlar ve şablonlar korunur.
+**Kurulum ve güncelleme:** [Son sürümden](https://github.com/omerorucu/merqur_pro/releases/latest) `MerQurPro-3.2.0-windows-x64-Setup.exe` indirilir ve çalıştırılır. Yeni sürüm mevcut kurulumun üzerine kurulur; lisans, ayarlar ve şablonlar korunur.
 
 **Lisans:** MerQur Pro ücretlidir ve kişiye özel, **bir yıllık** lisans anahtarıyla çalışır. **Ticari kullanım serbesttir.** Satış ve faturalama yetkili satıcı **Sekizgen Academy** tarafından yapılır.
 Lisans için: [info@sekizgenacademy.com](mailto:info@sekizgenacademy.com) · [sekizgenacademy.com](https://sekizgenacademy.com) · Sözleşme: [EULA-PRO-TR.md](EULA-PRO-TR.md)
 
 **Üçüncü taraf yazılım:** MrBayes 3.2.9 (GNU GPL v3) ayrı bir program olarak birlikte gelir; lisans metni ve değiştirilmemiş kaynak kodu kurulum klasöründedir.
 
-**Atıf:** Örücü, Ö. K. (2026). *MerQur Pro: Bütünleşik Akademik Veri Analizi ve Raporlama Platformu* (Sürüm 3.1.0; temel sürüm 2.3.1) [Bilgisayar yazılımı]. https://doi.org/10.53463/merqur.2026001 — Sonuçlardaki "Yazılım ve atıflar" bölümünde listelenen paketlere de atıf yapılması rica olunur.
+**Atıf:** Örücü, Ö. K. (2026). *MerQur Pro: Bütünleşik Akademik Veri Analizi ve Raporlama Platformu* (Sürüm 3.2.0; temel sürüm 2.3.2) [Bilgisayar yazılımı]. https://doi.org/10.53463/merqur.2026001 — Sonuçlardaki "Yazılım ve atıflar" bölümünde listelenen paketlere de atıf yapılması rica olunur.
 
 </details>
 
