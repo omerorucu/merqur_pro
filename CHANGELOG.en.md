@@ -1,5 +1,26 @@
 # MerQur Pro: Changelog
 
+## 3.3.0 (2026-11): 16 new templates: forest tree breeding and quantitative genetics, quality, time series; MerQur 2.4.1 base
+
+> "Societies that wish to live in comfort without working, without tiring and without producing are doomed to lose first their dignity, then their freedom, and then their independence and their future."
+> — Mustafa Kemal Atatürk
+
+- 16 new templates (211 in total), each compared with published results and, where an equivalent exists, with SAS:
+  - Forest tree breeding and quantitative genetics:
+    - provenance–progeny trial: variance components; individual and family-mean heritabilities with standard errors; coefficients of variation; genetic correlation and its standard error from bivariate REML; type B correlation for traits measured on different individuals; a model for unreplicated trials;
+    - selection gain and selection indices (Smith–Hazel, restricted index, Pesek–Baker desired-gains index);
+    - QST–FST comparison;
+    - genetic diversity in seed orchards and breeding populations (fertility variation, effective number of parents, status number, pollen contamination, effect of thinning);
+    - clonal and multi-site progeny trials (broad-sense heritability, type B genetic correlation, age–age correlation).
+  - Quality: multivariate control chart (Hotelling T², PCA-based T² and SPE monitoring, contribution decomposition); non-normal process capability (percentile/Clements, Weibull, lognormal, gamma, Johnson, Box-Cox).
+  - Time series and econometrics: structural VAR (A/B restrictions, Blanchard–Quah long-run identification, structural impulse responses, FEVD); extended GARCH (GARCH-M, IGARCH, GJR/TGARCH, APARCH, EGARCH, NAGARCH; normal, t, GED); panel count models (fixed- and random-effects Poisson and negative binomial, Hausman test).
+  - Mixed models and survival: factor analytic mixed model (multi-environment trials, genotype × environment); GEE for ordinal and nominal responses; discrete-time survival model (person-period data, logit/cloglog).
+  - Multivariate and causal: resampling-based multiple testing (Westfall–Young maxT and minP); social network analysis (centrality, density, community detection); causal graph (DAG) analysis (adjustment sets, instrumental variables, testable conditional independencies).
+- Futility boundary option in the group sequential design template (binding and non-binding β-spending).
+- Genetics example data: the example data of five genetics templates were replaced with an openly licensed (CC0) Cilician fir (Abies cilicica) microsatellite dataset; the templates were re-validated against published values for these data.
+- Fix: in non-normal process capability, the Johnson SB distribution now takes a cumulative probability of 0 or 1 for observations outside its support instead of stopping with an error.
+- All analyses and fixes from the free MerQur 2.4.0 and 2.4.1: six new analyses (Gamma/Inverse Gaussian/Tweedie GLM, relative risk and prevalence ratio, complex-sample ordinal and multinomial logistic regression, tolerance intervals, ANOM), the Randomization Plan tool, reading of decimal-comma numbers and numbers stored as text; fixes to Variance Components and to two-way ANOVA, ANCOVA and crossed mixed models with empty cells.
+
 ## 3.2.0 (2026-11): STM, variety registration templates, MerQur 2.3.2 base
 
 > "Societies that wish to live in comfort without working, without tiring and without producing are doomed to lose first their dignity, then their freedom, and then their independence and their future."
