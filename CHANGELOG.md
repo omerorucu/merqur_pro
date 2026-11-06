@@ -1,5 +1,26 @@
 # MerQur Pro: Değişiklik Günlüğü
 
+## 3.3.0 (2026-11) — 16 yeni şablon: orman ağacı ıslahı ve nicel genetik, kalite, zaman serisi; MerQur 2.4.1 tabanı
+
+> "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini sonra hürriyetlerini ve daha sonra da istiklal ve istikballerini kaybetmeye mahkûmdurlar."
+> — Mustafa Kemal Atatürk
+
+- 16 yeni şablon (toplam 211), her biri yayımlanmış kaynakla ve eşdeğeri varsa SAS ile karşılaştırıldı:
+  - Orman ağacı ıslahı ve nicel genetik:
+    - orijin–döl denemesi: varyans bileşenleri; birey ve aile ortalaması kalıtım dereceleri ile standart hataları; değişkenlik katsayıları; iki değişkenli REML ile genetik korelasyon ve standart hatası; farklı bireylerde ölçülen özellikler için B tipi korelasyon; tekrarsız denemeler için model;
+    - seleksiyon kazancı ve seleksiyon indeksleri (Smith–Hazel, kısıtlı indeks, Pesek–Baker istenen kazanç indeksi);
+    - QST–FST karşılaştırması;
+    - tohum bahçesi ve ıslah populasyonunda genetik çeşitlilik (doğurganlık değişkenliği, etkili ebeveyn sayısı, statü sayısı, dış polen katkısı, seyreltmenin etkisi);
+    - klon denemesi ve çok lokasyonlu döl denemesi (geniş anlamda kalıtım derecesi, B tipi genetik korelasyon, yaş–yaş korelasyonu).
+  - Kalite: çok değişkenli kontrol kartı (Hotelling T², temel bileşen tabanlı T² ve SPE izleme, katkı ayrıştırması); normal olmayan süreç yeterliliği (yüzdelik/Clements, Weibull, lognormal, gama, Johnson, Box-Cox).
+  - Zaman serisi ve ekonometri: yapısal VAR (A/B kısıtları, Blanchard–Quah uzun dönem tanımlaması, yapısal etki-tepki, FEVD); genişletilmiş GARCH (GARCH-M, IGARCH, GJR/TGARCH, APARCH, EGARCH, NAGARCH; normal, t, GED); panel sayım modelleri (sabit ve rastgele etkili Poisson ve negatif binom, Hausman testi).
+  - Karma model ve sağkalım: faktör analitik kovaryans yapılı karma model (çok çevreli denemeler, genotip × çevre); sıralı ve nominal yanıtlı GEE; kesikli zaman sağkalım modeli (kişi-dönem verisi, lojit/cloglog).
+  - Çok değişkenli ve nedensel: yeniden örneklemeli çoklu test düzeltmesi (Westfall–Young maxT ve minP); sosyal ağ analizi (merkezilik, yoğunluk, topluluk bulma); nedensel çizge (DAG) çözümlemesi (ayarlama kümeleri, araç değişkenler, sınanabilir koşullu bağımsızlıklar).
+- Grup ardışık tasarım şablonuna yararsızlık sınırı seçeneği (bağlayıcı ve bağlayıcı olmayan β harcaması).
+- Genetik örnek verileri: beş genetik şablonun örnek verisi açık lisanslı (CC0) Toros göknarı (Abies cilicica) mikrosatellit verisiyle değiştirildi; şablonlar bu veride yayımlanmış değerlerle yeniden doğrulandı.
+- Düzeltme: normal olmayan süreç yeterliliğinde Johnson SB dağılımı, dağılımın tanım aralığı dışındaki gözlemlerde hata vermek yerine birikimli olasılığı 0 ya da 1 alır.
+- Ücretsiz MerQur 2.4.0 ve 2.4.1 ile gelen bütün analizler ve düzeltmeler: altı yeni analiz (Gamma/Ters Gauss/Tweedie GLM, göreli risk ve prevalans oranı, karmaşık örneklem sıralı ve çok terimli lojistik regresyon, tolerans aralıkları, ANOM), Rastgeleleştirme Planı aracı, ondalık virgüllü ve metin olarak saklanmış sayıların okunması; Varyans Bileşenleri ile boş hücreli iki yönlü ANOVA, ANCOVA ve çapraz karma model düzeltmeleri.
+
 ## 3.2.0 (2026-11) — STM, tohum tescili şablonları, MerQur 2.3.2 tabanı
 
 > "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini sonra hürriyetlerini ve daha sonra da istiklal ve istikballerini kaybetmeye mahkûmdurlar."
