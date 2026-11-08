@@ -1,5 +1,15 @@
 # MerQur Pro: Changelog
 
+## 3.4.0 (2026-11): Accuracy and validation; MerQur 2.5.0 base
+
+> "Societies that wish to live in comfort without working, without tiring and without producing are doomed to lose first their dignity, then their freedom, and then their independence and their future."
+> — Mustafa Kemal Atatürk
+
+- MerQur Pro 3.4.0 brings the accuracy and validation improvements of the free MerQur 2.5.0: result values are stored at full precision and very small values are printed with significant digits.
+- Errors affecting results in specific data situations were fixed in data loading, probit (natural response), GLMM/GEE, cointegration and Cox regression.
+- New options were added to panel regression, mixed models, MANOVA, ARIMA, Cox and robust regression, the Dunn test, machine learning and multiple imputation (off by default); multi-group confirmatory factor analysis and measurement invariance are faster.
+- The template library is unchanged (211 templates); minor improvements were made to texts and stability.
+
 ## 3.3.0 (2026-11): 16 new templates: forest tree breeding and quantitative genetics, quality, time series; MerQur 2.4.1 base
 
 > "Societies that wish to live in comfort without working, without tiring and without producing are doomed to lose first their dignity, then their freedom, and then their independence and their future."
