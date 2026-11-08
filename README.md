@@ -15,14 +15,14 @@
 
 ---
 
-![Version](https://img.shields.io/badge/version-3.3.0-5B21B6?style=flat-square)
-![Base](https://img.shields.io/badge/base%20MerQur-2.4.1-7C3AED?style=flat-square)
+![Version](https://img.shields.io/badge/version-3.4.0-5B21B6?style=flat-square)
+![Base](https://img.shields.io/badge/base%20MerQur-2.5.0-7C3AED?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011%20x64-blue?style=flat-square)
 ![Languages](https://img.shields.io/badge/i18n-TR%20%7C%20EN%20%7C%20ES-success?style=flat-square)
 ![Templates](https://img.shields.io/badge/validated%20templates-211%20in%2024%20categories-5B21B6?style=flat-square)
 ![License](https://img.shields.io/badge/license-commercial%20key%20required-orange?style=flat-square)
 
-**[⬇ Download MerQur Pro 3.3.0 for Windows](https://github.com/omerorucu/merqur_pro/releases/latest)**
+**[⬇ Download MerQur Pro 3.4.0 for Windows](https://github.com/omerorucu/merqur_pro/releases/latest)**
 
 </div>
 
@@ -31,7 +31,7 @@
 ## 🔍 What is MerQur Pro?
 
 **MerQur Pro** is the licensed edition of [MerQur](https://github.com/omerorucu/merqur). It contains
-**everything in MerQur 2.4.1** (143 form-based analyses, 7 map methods, APA 7 reports) and adds
+**everything in MerQur 2.5.0** (143 form-based analyses, 7 map methods, APA 7 reports) and adds
 **211 validated analysis templates** and a **Code tab** for analyses that a form cannot express:
 advanced econometrics, clinical prediction, phylogenetics, forest tree breeding, custom models, simulations and more.
 
@@ -127,7 +127,7 @@ macOS and Linux builds of MerQur Pro are not available yet. The free MerQur runs
 
 ## 📥 Installation and updates
 
-1. Download **`MerQurPro-3.3.0-windows-x64-Setup.exe`** from the [latest release](https://github.com/omerorucu/merqur_pro/releases/latest).
+1. Download **`MerQurPro-3.4.0-windows-x64-Setup.exe`** from the [latest release](https://github.com/omerorucu/merqur_pro/releases/latest).
 2. Run the installer. The publisher is shown as **Ömer Kamil Örücü** (code-signed).
 3. On first start, read and accept the **MerQur Pro license agreement**, then enter your **license key**.
 
@@ -160,7 +160,7 @@ text, release notes).
 
 ## 📖 Citation
 
-> Örücü, Ö. K. (2026). *MerQur Pro: Integrated Academic Data Analysis and Reporting Platform* (Version 3.3.0; base version 2.4.1) [Computer software]. https://doi.org/10.53463/merqur.2026001
+> Örücü, Ö. K. (2026). *MerQur Pro: Integrated Academic Data Analysis and Reporting Platform* (Version 3.4.0; base version 2.5.0) [Computer software]. https://doi.org/10.53463/merqur.2026001
 
 Please also cite the R packages and programs listed in the "Software and citations" section of your results.
 
@@ -173,7 +173,7 @@ Registered work: T.C. Ministry of Culture and Tourism, registration no. **2026/1
 
 ## MerQur Pro nedir?
 
-**MerQur Pro**, [MerQur](https://github.com/omerorucu/merqur)'un lisanslı sürümüdür. **MerQur 2.4.1'in
+**MerQur Pro**, [MerQur](https://github.com/omerorucu/merqur)'un lisanslı sürümüdür. **MerQur 2.5.0'ın
 tamamını** (143 form tabanlı analiz, 7 harita yöntemi, APA 7 raporları) içerir; buna **211 doğrulanmış
 analiz şablonu** ve formla ifade edilemeyen analizler için bir **Kod sekmesi** ekler.
 
@@ -194,14 +194,14 @@ analiz şablonu** ve formla ifade edilemeyen analizler için bir **Kod sekmesi**
 
 **Sistem gereksinimleri:** Windows 10/11 64 bit, yaklaşık 1,5 GB disk. R şablonları (211'in 185'i) için R 4.5.x gerekir. Program yalnız sizin gönderdiğiniz AI isteklerinde ve **Yardım → Güncellemeleri Denetle** ile ağa çıkar.
 
-**Kurulum ve güncelleme:** [Son sürümden](https://github.com/omerorucu/merqur_pro/releases/latest) `MerQurPro-3.3.0-windows-x64-Setup.exe` indirilir ve çalıştırılır. Yeni sürüm mevcut kurulumun üzerine kurulur; lisans, ayarlar ve şablonlar korunur.
+**Kurulum ve güncelleme:** [Son sürümden](https://github.com/omerorucu/merqur_pro/releases/latest) `MerQurPro-3.4.0-windows-x64-Setup.exe` indirilir ve çalıştırılır. Yeni sürüm mevcut kurulumun üzerine kurulur; lisans, ayarlar ve şablonlar korunur.
 
 **Lisans:** MerQur Pro ücretlidir ve kişiye özel, **bir yıllık** lisans anahtarıyla çalışır. **Ticari kullanım serbesttir.** Satış ve faturalama yetkili satıcı **Sekizgen Academy** tarafından yapılır.
 Lisans için: [info@sekizgenacademy.com](mailto:info@sekizgenacademy.com) · [sekizgenacademy.com](https://sekizgenacademy.com) · Sözleşme: [EULA-PRO-TR.md](EULA-PRO-TR.md)
 
 **Üçüncü taraf yazılım:** MrBayes 3.2.9 (GNU GPL v3) ayrı bir program olarak birlikte gelir; lisans metni ve değiştirilmemiş kaynak kodu kurulum klasöründedir.
 
-**Atıf:** Örücü, Ö. K. (2026). *MerQur Pro: Bütünleşik Akademik Veri Analizi ve Raporlama Platformu* (Sürüm 3.3.0; temel sürüm 2.4.1) [Bilgisayar yazılımı]. https://doi.org/10.53463/merqur.2026001 — Sonuçlardaki "Yazılım ve atıflar" bölümünde listelenen paketlere de atıf yapılması rica olunur.
+**Atıf:** Örücü, Ö. K. (2026). *MerQur Pro: Bütünleşik Akademik Veri Analizi ve Raporlama Platformu* (Sürüm 3.4.0; temel sürüm 2.5.0) [Bilgisayar yazılımı]. https://doi.org/10.53463/merqur.2026001 — Sonuçlardaki "Yazılım ve atıflar" bölümünde listelenen paketlere de atıf yapılması rica olunur.
 
 </details>
 
