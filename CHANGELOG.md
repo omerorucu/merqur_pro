@@ -1,5 +1,15 @@
 # MerQur Pro: Değişiklik Günlüğü
 
+## 3.4.0 (2026-11) — Doğruluk ve doğrulama; MerQur 2.5.0 tabanı
+
+> "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini sonra hürriyetlerini ve daha sonra da istiklal ve istikballerini kaybetmeye mahkûmdurlar."
+> — Mustafa Kemal Atatürk
+
+- MerQur Pro 3.4.0, ücretsiz MerQur 2.5.0'ın doğruluk ve doğrulama iyileştirmelerini getirir: sonuç değerleri tam duyarlıkla saklanır, çok küçük değerler anlamlı basamakla yazılır.
+- Veri yükleme, probit (doğal yanıt), GLMM/GEE, eşbütünleşme ve Cox regresyonunda belirli veri durumlarında sonucu etkileyen hatalar giderildi.
+- Panel regresyonu, karma modeller, MANOVA, ARIMA, Cox ve sağlam regresyon, Dunn testi, makine öğrenmesi ve çoklu atamaya yeni seçenekler eklendi (varsayılan olarak kapalı); çok gruplu doğrulayıcı faktör analizi ve ölçme değişmezliği hızlandı.
+- Şablon kütüphanesi değişmedi (211 şablon); metinlerde ve kararlılıkta küçük iyileştirmeler yapıldı.
+
 ## 3.3.0 (2026-11) — 16 yeni şablon: orman ağacı ıslahı ve nicel genetik, kalite, zaman serisi; MerQur 2.4.1 tabanı
 
 > "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini sonra hürriyetlerini ve daha sonra da istiklal ve istikballerini kaybetmeye mahkûmdurlar."
