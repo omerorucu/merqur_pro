@@ -1,5 +1,14 @@
 # MerQur Pro: Changelog
 
+## 3.5.0 (2026-11): Ecology: community-weighted means and gradient models, PERMDISP options; MerQur 2.5.0 base
+
+> "Societies that wish to live in comfort without working, without tiring and without producing are doomed to lose first their dignity, then their freedom, and then their independence and their future."
+> — Mustafa Kemal Atatürk
+
+- New template (212 in total): **community-weighted means (CWM), diversity and environmental gradient models.** From a species cover table and a species trait table it computes, for each plot, the CWM, the number of species and Shannon H′; each response is analysed with a linear model containing the gradient variable, the site factor and covariates (stepwise simplification by F test and AIC, residual checks, Tukey comparisons and letter groups). Row-based, column-based and max permutation tests for CWM; Jennings-Fischer total canopy cover; box plots with letters and scatter plots along the gradient. Validated against published values and R packages (vegan, weimea, emmeans, multcompView).
+- PERMANOVA and Mantel template: the homogeneity of dispersion test (PERMDISP) gains a spatial-median centre, square-rooted distances and a small-group bias adjustment; points can be coloured by a second factor; an ordination plot with convex hulls and group centres.
+- Sample data: understory of Mediterranean cypress plantations (Pelella et al. 2026; CC BY 4.0).
+
 ## 3.4.0 (2026-11): Accuracy and validation; MerQur 2.5.0 base
 
 > "Societies that wish to live in comfort without working, without tiring and without producing are doomed to lose first their dignity, then their freedom, and then their independence and their future."
