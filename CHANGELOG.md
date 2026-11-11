@@ -1,5 +1,14 @@
 # MerQur Pro: Değişiklik Günlüğü
 
+## 3.5.0 (2026-11) — Ekoloji: topluluk ağırlıklı ortalamalar ve gradyan modelleri, PERMDISP seçenekleri; MerQur 2.5.0 tabanı
+
+> "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini sonra hürriyetlerini ve daha sonra da istiklal ve istikballerini kaybetmeye mahkûmdurlar."
+> — Mustafa Kemal Atatürk
+
+- Yeni şablon (toplam 212): **topluluk ağırlıklı ortalamalar (CWM), çeşitlilik ve çevresel gradyan modelleri.** Tür örtü tablosu ve tür özellik tablosundan her örnek alan için CWM, tür sayısı ve Shannon H′ hesaplanır; her yanıt gradyan değişkeni, alan etkeni ve ortak değişkenlerle doğrusal modelle incelenir (F testi ve AIC ile adım adım sadeleştirme, artık denetimleri, Tukey karşılaştırmaları ve harf grupları). CWM için satır, sütun ve en büyük p (max) permütasyon testleri; Jennings-Fischer toplam tepe örtüsü; harfli kutu ve gradyan boyunca serpme grafik panelleri. Yayımlanmış değerlerle ve R paketleriyle (vegan, weimea, emmeans, multcompView) doğrulandı.
+- PERMANOVA ve Mantel şablonu: yayılım homojenliği testine (PERMDISP) uzamsal medyan merkezi, uzaklıkların karekökü ve küçük grup yanlılık düzeltmesi seçenekleri; noktaları ikinci bir etkene göre renklendirme; grupların dışbükey zarfları ve merkezleriyle ordinasyon grafiği.
+- Örnek veri: Akdeniz servisi plantasyonlarının alt katı (Pelella ve ark. 2026; CC BY 4.0).
+
 ## 3.4.0 (2026-11) — Doğruluk ve doğrulama; MerQur 2.5.0 tabanı
 
 > "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini sonra hürriyetlerini ve daha sonra da istiklal ve istikballerini kaybetmeye mahkûmdurlar."
